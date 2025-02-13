@@ -15,6 +15,8 @@ image: /assets/img/stack-thumbnail.png
 - This is the beginning of our **Deploying LLMs in Clusters** series. We will be rolling out more blogs about serving LLMs with your own infrastructure during the next few weeks. Let us know which topic we should do next! [[poll]](https://forms.gle/cSeqDz1Nm2iwv7eH8)
 [[Github Link]](https://github.com/vllm-project/production-stack) | [[Tutorial Video]](https://www.youtube.com/watch?v=EsTJbQtzj0g&ab_channel=JunchenJiang) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Interest Form]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
+<iframe width="500" height="315" src="(https://www.youtube.com/watch?v=EsTJbQtzj0g&ab_channel=JunchenJiang" frameborder="0" allowfullscreen></iframe>
+
 
 # The Context
 <!-- Over the past year, LLM inference has raced to the forefront, powering everything from chatbots to code assistants and beyond. It’s quickly becoming critical infrastructure, much like the cloud was to big data, cellular was to mobile apps, and CDNs were (and still are!) to the broader Internet. -->
