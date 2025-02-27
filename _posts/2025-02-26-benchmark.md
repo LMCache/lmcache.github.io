@@ -1,66 +1,73 @@
 ---
 layout: post
-title: "AIBrix or Production-Stack, which one should I use for vLLM K8S production?"
-thumbnail-img: /assets/img/benchmark_brix.png
-share-img: /assets/img/benchmark_brix.png
+title: "ByteDance’s open source LLM k8s stack is 10x SLOWER? You better try this other solution from vLLM and LMCache Team!"
+thumbnail-img: /assets/img/benchmark-e2e.png
+share-img: /assets/img/benchmark-e2e.png
 author: Production-Stack Team
-image: /assets/img/benchmark_brix.png
+image: /assets/img/benchmark-e2e.png
 ---
 <br>
 
 
 ## TL;DR
-- vLLM boasts the largest open-source community in LLM serving. Serving multiple vLLM engines inside a cluster is important and the community have already multiple solution. **“AIBrix** is a repository recently open-sourced by ByteDance to provide a solution that achieves similar functionalities as their their production scenarios. On the other hand, **“vLLM production-stack”**, originially developed by the UChicago LMCache team, offers a light-weight reference solution which focuses on clean design and close integration with the vLLM engine.
-- Despite the difference in implementation and origin, how do **AIBrix** and **Production Stack** really compare in terms of **performance**, **stability**, and **functionality**?
+-  **AIBrix**, widely thought to be TikTok/ByteDance’s internal system, claims to have all the necessary features built out for production settings. However, according to our benchmark, AIBrix is **way slower** and **less stable** than even the **naive Kubernetes** vLLM deployment!
+-  Having heard similar complaints after the initial hype around AIBrix, we release a benchmark tutorial and scripts to help everyone experiment and reproduce the results.
+-  Looking for a faster and deployment-ready alternative? Check **vLLM-production-stack**, vLLM’s official reference implementation of a cluster-scale vLLM deployment with optimization!
+
 - We release our benchmark on this [[Link]]() so you could try it yourself. Let us know if you are interested in connecting!
 
 ##### [[Github Link]](https://github.com/vllm-project/production-stack) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Get In Touch]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
+<div align="center">
+<img src="/assets/img/benchmark_e2e.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+</div>
 
-# The Context
-<!-- Over the past year, LLM inference has raced to the forefront, powering everything from chatbots to code assistants and beyond. It’s quickly becoming critical infrastructure, much like the cloud was to big data, cellular was to mobile apps, and CDNs were (and still are!) to the broader Internet. -->
+# Initial Benchmark 
 
+## Set up
+In our benchmark, we benchmark a multi-turn conversation scenario, where 320 users take turns to use the chat service hosted on a K8S cluster with 8 nodes each equipped with one A100 GPU running ```Llama-3.1-8B-Instruct```. 
 
-**vLLM** has taken the open-source community by storm, with unparalleled hardware and model support plus an active ecosystem of top-notch contributors. 
+We chose our workload from ShareGPT for real input/output texts from real LLM services. Our workload contains 20,000 input tokens and 100 output tokens per user.
 
-**vLLM Production-stack** is an open-source **reference implementation** of an inference stack built on top of vLLM, designed for a  clean interface and close integration with vLLM. It was originally designed by the the UChicago LMCache team, which focused on fine-grained KV cache support.
+We set up **production stack** by setting the CPU offloading buffer size (i.e., ``cpuOffloadingBufferSize``) to 120 GB per pod.
 
-**AIBrix** is an open-source solution developed by the ByteDance engineering team. It was created separately to achieve similar functionalities as in the real production scenarios in ByteDance. It offers a K8S native solution with LORA support and distributed KV caching.
+We set up the **AIBrix** with the default setup and set "```VINEYARD_CACHE_CPU_MEM_LIMIT_GB```" to 120GB and ```cacheSpec memory``` to 150GB for fair comparison.
 
-Today, we release an open-benchmark for community to compare these two frameworks in terms of **performance**, **stability**, and **functionality**.
-
-
-# Benchmark Results
-We report our results based on three aspects: Performance, Stability, and Functionality.
-
-## Performance
-We benchmark a multi-turn conversation scenario, where 320 users take turns to use the chat service hosted on a K8S cluster with 8 nodes each equipped with A100 GPUs. The chat histories are from ShareGPT datasets. 
-
-G1
-
-End to End comparison graph
+We create a **naive K8S** solution by running same helm chart as in production stack, except using the latest vLLM v0.7.3 with only GPU offloading capabilities.
 
 
-We also report the scalability of the request router in both AIBrix and Production-Stack.
 
-G2
+## Results
+
+### Average TTFT versus Query per Second Graph
+
+<div align="center">
+<img src="/assets/img/benchmark_e2e.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+</div>
 
 
 
 ## Stability
+In this 
 
-XXX
-
-## Functionality
-Table comparison, AIBrix has lora,xxx
+<div align="center">
+<img src="/assets/img/AIbrix_router_stability.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+</div>
+<div align="center">
+<img src="/assets/img/prod_stack_stability.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+</div>
 
 
 
 ## Conclusion
 
-AIBrix and Production-Stack are both great open-source vLLM cluster serving solutions. While AIBrix gives a K8S-native solution with Lora support, Production-Stack offers better performance and stability due to its light-weight design and close co-design with vLLM serving engine.
+AIBrix and Production-Stack are both great open-source vLLM cluster serving solutions. While AIBrix gives a K8S-native solution with Lora support, Production-Stack offers better performance and stability.
 
-We welcome more benchmarks on different workloads and inclusion of other serving frameworks. Talk with us in the #production-stack channel in vLLM slack or LMCache slack today to discuss the future steps!
+Born out of a collaboration between vLLM (Berkeley) and LMCache (UChicago), vLLM-production-stack features the most advanced built-in KV-cache optimizations and an upstream support for the latest vLLM releases.
+
+What will happen soon: For now, vLLM-production-stack project uses helm and python interface for ease of use and modification. But as a near-term priority, we welcome **contributions** from the community to add more K8S native support, including **CR-based deployment**.
+
+We also welcome **more benchmarks** on different workloads and inclusion of other serving frameworks. Talk with us in the #production-stack channel in vLLM slack or LMCache slack today to discuss the future steps!
 
 Join us to build a future where every application can harness the power of LLM inference—reliably, at scale, and without breaking a sweat.
 
