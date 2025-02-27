@@ -1,26 +1,27 @@
 ---
 layout: post
 title: "ByteDance’s open source LLM k8s stack is 10x SLOWER? You better try this other solution from vLLM and LMCache Team!"
-thumbnail-img: /assets/img/benchmark-e2e.png
-share-img: /assets/img/benchmark-e2e.png
+thumbnail-img: /assets/img/benchmark_e2e_brix.png
+share-img: /assets/img/benchmark_e2e_brix.png
 author: Production-Stack Team
-image: /assets/img/benchmark-e2e.png
+image: /assets/img/benchmark_e2e_brix.png
 ---
 <br>
 
 
 ## TL;DR
 -  **AIBrix**, widely thought to be TikTok/ByteDance’s internal system, claims to have all the necessary features built out for production settings. However, according to our benchmark, AIBrix is **way slower** and **less stable** than even the **naive Kubernetes** vLLM deployment!
--  Having heard similar complaints after the initial hype around AIBrix, we release a benchmark tutorial and scripts to help everyone experiment and reproduce the results.
--  Looking for a faster and deployment-ready alternative? Check **vLLM-production-stack**, vLLM’s official reference implementation of a cluster-scale vLLM deployment with optimization!
+-  Having heard similar complaints after the initial hype around AIBrix, we release a **benchmark** tutorial and scripts to help everyone experiment and reproduce the results.
+-  Looking for a faster and deployment-ready alternative? Check out **vLLM-production-stack**, vLLM’s official reference implementation of a cluster-scale vLLM deployment with optimization!
 
 - We release our benchmark on this [[Link]]() so you could try it yourself. Let us know if you are interested in connecting!
 
-##### [[Github Link]](https://github.com/vllm-project/production-stack) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Get In Touch]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
 <div align="center">
-<img src="/assets/img/benchmark_e2e.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+<img src="/assets/img/benchmark_e2e_brix.png" alt="Icon" style="width: 90%; vertical-align:middle;">
 </div>
+
+##### [[Github Link]](https://github.com/vllm-project/production-stack) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Get In Touch]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
 # Initial Benchmark 
 
@@ -39,16 +40,27 @@ We create a **naive K8S** solution by running same helm chart as in production s
 
 ## Results
 
-### Average TTFT versus Query per Second Graph
+### Average TTFT versus QPS
+
+We are illustrate the average time-to-first-token (TTFT) delay as a function of queries per second (QPS) for these three different LLM inference serving solutions:
+
+**AIBrix**(red line) shows a steep increase in TTFT as QPS rises, indicating significant performance degradation under higher loads. This is potentially due to inefficient KV cache offloading implementations and lack of scalability in some system components.
+
+**Naive Kubernetes vLLM** (orange line) exhibits more stable performance than AIBrix but still experiences increasing latency with higher query rates due to lack of .
+
+**vLLM Production Stack** (green line) maintains consistently low TTFT across all QPS levels, demonstrating superior efficiency and scalability.
+
 
 <div align="center">
-<img src="/assets/img/benchmark_e2e.png" alt="Icon" style="width: 90%; vertical-align:middle;">
+<img src="/assets/img/benchmark_e2e_brix.png" alt="Icon" style="width: 90%; vertical-align:middle;">
 </div>
 
 
 
 ## Stability
-In this 
+We compare the stability of AIBrix and vLLM Production Stack over a period of serving time in the following experiment.
+
+We run each deployment for an extended 400-second period.
 
 <div align="center">
 <img src="/assets/img/AIbrix_router_stability.png" alt="Icon" style="width: 90%; vertical-align:middle;">
@@ -57,13 +69,17 @@ In this
 <img src="/assets/img/prod_stack_stability.png" alt="Icon" style="width: 90%; vertical-align:middle;">
 </div>
 
+The AIBrix router availability graph shows frequent downtime where the router becomes **unavailable** at **multiple** points during the test and requires **manually restarting** the port forwarding for the service to come back alive. 
+
+On the other hand, **vLLM Production Stack** router availability graph (bottom) demonstrates **100% uptime** and with no interruptions throughout the same period.
+
 
 
 ## Conclusion
 
-AIBrix and Production-Stack are both great open-source vLLM cluster serving solutions. While AIBrix gives a K8S-native solution with Lora support, Production-Stack offers better performance and stability.
+AIBrix and Production-Stack are both great open-source vLLM cluster serving solutions. While AIBrix gives a K8S-native solution with Lora support, Production-Stack offers **better performance** and **stability**.
 
-Born out of a collaboration between vLLM (Berkeley) and LMCache (UChicago), vLLM-production-stack features the most advanced built-in KV-cache optimizations and an upstream support for the latest vLLM releases.
+Born out of a **collaboration** between **vLLM** (Berkeley) and **LMCache** (UChicago), vLLM production-stack features the most advanced built-in KV-cache optimizations and an upstream support for the latest vLLM releases.
 
 What will happen soon: For now, vLLM-production-stack project uses helm and python interface for ease of use and modification. But as a near-term priority, we welcome **contributions** from the community to add more K8S native support, including **CR-based deployment**.
 
