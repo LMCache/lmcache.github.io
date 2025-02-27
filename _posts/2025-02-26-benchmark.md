@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AIBrix vs Production-Stack, which one should I use for vLLM K8S Serving?"
+title: "AIBrix or Production-Stack, which one should I use for vLLM K8S production?"
 thumbnail-img: /assets/img/benchmark_brix.png
 share-img: /assets/img/benchmark_brix.png
 author: Production-Stack Team
@@ -10,9 +10,9 @@ image: /assets/img/benchmark_brix.png
 
 
 ## TL;DR
-- vLLM boasts the largest open-source community in LLM serving. Inside the vLLM project, **“AIBrix”** is an solution open-sourced by ByteDance team, while **“vLLM production-stack”** offers a light-weight reference solution which focuses on integration with vLLM engine.
-- Despite the implementation difference and origin, how do **AIBrix** and **Production Stack** really compare in terms of **performance**, **stability**, and **functionality**?
-- We release our benchmark on this [[Link]] so you could try it yourself. Let us know if you are interested in connecting!
+- vLLM boasts the largest open-source community in LLM serving. Serving multiple vLLM engines inside a cluster is important and the community have already multiple solution. **“AIBrix** is a repository recently open-sourced by ByteDance to provide a solution that achieves similar functionalities as their their production scenarios. On the other hand, **“vLLM production-stack”**, originially developed by the UChicago LMCache team, offers a light-weight reference solution which focuses on clean design and close integration with the vLLM engine.
+- Despite the difference in implementation and origin, how do **AIBrix** and **Production Stack** really compare in terms of **performance**, **stability**, and **functionality**?
+- We release our benchmark on this [[Link]]() so you could try it yourself. Let us know if you are interested in connecting!
 
 ##### [[Github Link]](https://github.com/vllm-project/production-stack) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Get In Touch]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
@@ -23,21 +23,31 @@ image: /assets/img/benchmark_brix.png
 
 **vLLM** has taken the open-source community by storm, with unparalleled hardware and model support plus an active ecosystem of top-notch contributors. 
 
-**vLLM Production-stack** is an open-source **reference implementation** of an **inference stack** built on top of vLLM, designed to run seamlessly on a cluster of GPU nodes. 
+**vLLM Production-stack** is an open-source **reference implementation** of an inference stack built on top of vLLM, designed for a  clean interface and close integration with vLLM. It was originally designed by the the UChicago LMCache team, which focused on fine-grained KV cache support.
 
-**AIBrix** is an open-source solution created by ByteDance developed separately with similar functionalities as their production scenario.
+**AIBrix** is an open-source solution developed by the ByteDance engineering team. It was created separately to achieve similar functionalities as in the real production scenarios in ByteDance. It offers a K8S native solution with LORA support and distributed KV caching.
 
-Today, we release an open-benchmark for community to compare in terms of **performance**, **stability**, and **functionality**.
+Today, we release an open-benchmark for community to compare these two frameworks in terms of **performance**, **stability**, and **functionality**.
 
 
 # Benchmark Results
 We report our results based on three aspects: Performance, Stability, and Functionality.
 
 ## Performance
+We benchmark a multi-turn conversation scenario, where 320 users take turns to use the chat service hosted on a K8S cluster with 8 nodes each equipped with A100 GPUs. The chat histories are from ShareGPT datasets. 
+
+G1
 
 End to End comparison graph
 
-## Availability
+
+We also report the scalability of the request router in both AIBrix and Production-Stack.
+
+G2
+
+
+
+## Stability
 
 XXX
 
