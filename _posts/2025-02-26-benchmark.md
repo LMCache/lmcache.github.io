@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ByteDance’s LLM serving stack is 10x SLOWER? \n Check out the real vLLM reference system!"
+title: "10x FASTER than ByteDance’s LLM platform? \n Check out the real reference vLLM reference serving system!"
 thumbnail-img: /assets/img/benchmark_e2e_brix.png
 share-img: /assets/img/benchmark_e2e_brix.png
 author: Production-Stack Team
