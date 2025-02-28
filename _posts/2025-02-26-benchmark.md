@@ -34,7 +34,7 @@ image: /assets/img/benchmark_e2e_brix.png
 We chose our conversation history from ShareGPT for real LLM input/output texts. Our workload contains 20,000 input tokens and 100 output tokens per user.
 
 *Solutions:* 
-- We set up **vLLM Production Stack** [link](https://github.com/vllm-project/production-stack) by setting the CPU offloading buffer size (i.e., ``cpuOffloadingBufferSize``) to 120 GB per pod.
+- We set up [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) by setting the CPU offloading buffer size (i.e., ``cpuOffloadingBufferSize``) to 120 GB per pod.
 
 - For fair comparison, we also set up the **AIBrix** with the default setup and set "```VINEYARD_CACHE_CPU_MEM_LIMIT_GB```" to 120GB and ```cacheSpec memory``` to 150GB.
 
