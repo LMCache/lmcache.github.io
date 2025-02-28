@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ByteDance’s LLM serving stack is 10x SLOWER than even naive K8S? Check out the real reference system from the vLLM and LMCache Teams!"
+title: "ByteDance’s LLM serving stack is 10x SLOWER? Check out the real reference system from the vLLM and LMCache Teams!"
 thumbnail-img: /assets/img/benchmark_e2e_brix.png
 share-img: /assets/img/benchmark_e2e_brix.png
 author: Production-Stack Team
@@ -81,7 +81,7 @@ On the other hand, **vLLM Production Stack** router availability graph (bottom) 
 
 
 
-## Conclusion
+## Concluding Sentences
 
 While benchmarking doesn't show the full picture, we are also surprised by the stark difference with this initial benchmarking. In short, AIBrix has a fully built-out native K8S integration, but vLLM Production Stack offers **better performance** and **availability**, and from-the-scratch **modular** design.
 
@@ -89,7 +89,7 @@ Born out of an academic **collaboration** between **vLLM** (Berkeley) and **LMCa
 
 As an **open** framework, vLLM Production Stack uses helm and python interface for ease of use and modification. As a near-term priority, we welcome **contributions** from the community to add more K8S native support, including **CR-based deployment**, and LoRA management, among others. 
 
-We also welcome **more benchmarks** on different workloads and inclusion of other serving frameworks. Contact us in the **#production-stack**[link!] slack channel or LMCache slack today to discuss the future steps!
+We also welcome **more benchmarks** on different workloads and inclusion of other serving frameworks. Contact us in the **#production-stack** [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA) or LMCache slack today to discuss the future steps!
 
 Join us to build a future where every application can harness the power of LLM inference—reliably, at scale, and without breaking a sweat.
 
@@ -98,5 +98,5 @@ Join us to build a future where every application can harness the power of LLM i
 Contacts:
 - **Github: [https://github.com/vllm-project/production-stack](https://github.com/vllm-project/production-stack)**
 - **Chat with the Developers** **[Interest Form](https://forms.gle/mQfQDUXbKfp2St1z7)**
-- **vLLM [slack](https://slack.vllm.ai/)**
+- **vLLM Production-Stack [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA)**
 - **LMCache [slack](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-2viziwhue-5Amprc9k5hcIdXT7XevTaQ)**
