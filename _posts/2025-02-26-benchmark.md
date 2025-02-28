@@ -17,12 +17,8 @@ image: /assets/img/benchmark_e2e_brix.png
 </div>
 
 -  Widely thought to be TikTok/ByteDance’s internal system, **AIBrix** claims to have all the necessary features built out for production settings. However, this benchmark shows AIBrix is **way slower** and **less stable** than even the **naive Kubernetes** vLLM deployment!
--  Having heard similar complaints in the community after the initial hype around AIBrix, we release a **benchmark** study today for everyone to experiment and reproduce.
-
+-  Having heard similar complaints in the community after the initial hype around AIBrix, we released a **benchmark** study and made its [scripts](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [tutorial](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) public today for everyone to experiment and reproduce.
 -  Now, ready for a faster and deployment-ready option? Check out **vLLM Production Stack** [repo](https://github.com/vllm-project/production-stack), vLLM’s official reference implementation of an optimized cluster-scale vLLM deployment (including **LMCache** [repo](https://github.com/LMCache/LMCache)) led by research groups at **UChicago** and **UC Berkeley**!
-
-- We release our **benchmark** [tutorial](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [script](https://github.com/vllm-project/production-stack/tree/main/benchmarks/multi-round-qa) so you could try it yourself! 
-
 
 ##### [[vLLM Production Stack Repo]](https://github.com/vllm-project/production-stack) | [[More Tutorials]](https://github.com/vllm-project/production-stack/tree/main/tutorials) | [[Get In Touch]](https://forms.gle/Jaq2UUFjgvuedRPV8)
 
