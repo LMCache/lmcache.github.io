@@ -8,7 +8,6 @@ image: /assets/img/benchmark_e2e_brix.png
 ---
 <br>
 
-
 ## TL;DR
 
 #### **A picture is worth a thousand words**
@@ -81,7 +80,7 @@ On the other hand, **vLLM Production Stack** router availability graph (bottom) 
 
 
 
-## Concluding Sentences
+## Concluding Words
 
 While benchmarking doesn't show the full picture, we are also surprised by the stark difference with this initial benchmarking. In short, AIBrix has a fully built-out native K8S integration, but vLLM Production Stack offers **better performance** and **availability**, and from-the-scratch **modular** design.
 
@@ -95,7 +94,8 @@ Join us to build a future where every application can harness the power of LLM i
 
 *Happy deploying!*
 
-Contacts:
+## Contacts:
+
 - **Github: [https://github.com/vllm-project/production-stack](https://github.com/vllm-project/production-stack)**
 - **Chat with the Developers** **[Interest Form](https://forms.gle/mQfQDUXbKfp2St1z7)**
 - **vLLM Production-Stack [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA)**
