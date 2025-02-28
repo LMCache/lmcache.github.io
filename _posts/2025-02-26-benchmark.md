@@ -19,7 +19,7 @@ image: /assets/img/benchmark_e2e_brix.png
 -  Widely thought to be TikTok/ByteDance’s internal system, **AIBrix** claims to have all the necessary features built out for production settings. However, this benchmark shows AIBrix is **way slower** and **less stable** than even the **naive Kubernetes** vLLM deployment!
 -  Having heard similar complaints in the community after the initial hype around AIBrix, we release a **benchmark** study today for everyone to experiment and reproduce.
 
--  Now, ready for a faster and deployment-ready option? Check out **vLLM Production Stack** [repo](https://github.com/vllm-project/production-stack), vLLM’s official reference implementation of a cluster-scale vLLM deployment with optimization (including **LMCache** [repo](https://github.com/LMCache/LMCache))!
+-  Now, ready for a faster and deployment-ready option? Check out **vLLM Production Stack** [repo](https://github.com/vllm-project/production-stack), vLLM’s official reference implementation of an optimized cluster-scale vLLM deployment (including **LMCache** [repo](https://github.com/LMCache/LMCache)) led by research groups at UChicago and UC Berkeley!
 
 - We release our **benchmark** [tutorial](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [script](https://github.com/vllm-project/production-stack/tree/main/benchmarks/multi-round-qa) so you could try it yourself! 
 
@@ -84,7 +84,7 @@ On the other hand, **vLLM Production Stack** router availability graph (bottom) 
 
 While benchmarking doesn't show the full picture, we are also surprised by the stark difference with this initial benchmarking. In short, AIBrix has a fully built-out native K8S integration, but vLLM Production Stack offers **better performance** and **availability**, and from-the-scratch **modular** design.
 
-Born out of an academic **collaboration** between **vLLM** (Berkeley) and **LMCache** (UChicago), vLLM Production Stack features the most advanced built-in **KV-cache optimizations** and an upstream support of the latest vLLM releases.
+Born out of an **academic collaboration** between **vLLM** (Berkeley) and **LMCache** (UChicago), vLLM Production Stack features the most advanced built-in **KV-cache optimizations** and an upstream support of the latest vLLM releases.
 
 As an **open** framework, vLLM Production Stack uses helm and python interface for ease of use and modification. As a near-term priority, **we welcome contributions from the community to add more K8S native support, including CR-based deployment, and LoRA management, among others**. 
 
