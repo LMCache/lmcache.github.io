@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ByteDance’s LLM serving stack is 10x SLOWER? Check out the real reference system from the vLLM and LMCache Teams!"
+title: "ByteDance’s LLM serving stack is 10x SLOWER? Check out the real vLLM reference system!"
 thumbnail-img: /assets/img/benchmark_e2e_brix.png
 share-img: /assets/img/benchmark_e2e_brix.png
 author: Production-Stack Team
