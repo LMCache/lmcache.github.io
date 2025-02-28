@@ -86,7 +86,7 @@ While benchmarking doesn't show the full picture, we are also surprised by the s
 
 Born out of an **academic collaboration** between **vLLM** (Berkeley) and **LMCache** (UChicago), vLLM Production Stack features the most advanced built-in **KV-cache optimizations** and an upstream support of the latest vLLM releases.
 
-As an **open** framework, vLLM Production Stack uses helm and python interface for ease of use and modification. As a near-term priority, **we welcome contributions from the community to add more K8S native support, including CR-based deployment, and LoRA management, among others**. 
+As an **OPEN** framework, vLLM Production Stack uses helm and python interface for ease of use and modification. As a near-term priority, **we welcome contributions from the community to add more K8S native support, including CR-based deployment, and LoRA management, among others**. 
 
 **We also welcome more benchmarks on different workloads and other serving frameworks**. Contact us in the **#production-stack** [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA) or LMCache slack today to discuss the future steps!
 
