@@ -40,7 +40,7 @@ In short, as our community grows, people never need to worry whether their contr
 
 
 
-## K8S-native Deployment + Optimized Performance
+## K8S-Native Deployment + Optimized Performance
 
 When deploying Kubernetes-native solutions, operators often have to choose either "K8S-native" or "optimized performance." With vLLM Production Stack, you can have BOTH K8S-native support AND OPTIMIZED performance. 
 
