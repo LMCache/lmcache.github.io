@@ -14,7 +14,7 @@ image:
 
 ## TL;DR
 
-- [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), originally an academic open-source project, is now an official [**reference implementation**](https://docs.vllm.ai/en/stable/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including K8S-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, etc.
+- [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), originally an academic open-source project, is now an official [**reference implementation**](https://docs.vllm.ai/en/latest/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including K8S-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, etc.
 - Why does it matter to the industry? 
   - A growing, vibrant [**OPEN community**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md) with official vLLM [**UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
   - Designed for both **OPTIMIZED performance** [LINKS?] and **K8S-NATIVE** deployment.
