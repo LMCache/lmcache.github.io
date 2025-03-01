@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "vLLM Production Stack: a Critical Step to AGI"
-thumbnail-img: /assets/img/benchmark_e2e_brix.png
-share-img: /assets/img/benchmark_e2e_brix.png
+thumbnail-img: 
+share-img: 
 author: Production-Stack Team
-image: /assets/img/benchmark_e2e_brix.png
+image: 
 ---
 <be>
 
