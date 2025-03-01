@@ -14,40 +14,53 @@ image: /assets/img/benchmark_e2e_brix.png
 
 ## TL;DR
 
-- vLLM Production Stack, originally an academic open-source project, is now an [**official reference implementation**](https://docs.vllm.ai/en/stable/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including monitoring, CR-based router, autoscaling, LoRA management, distributed KV sharing, etc.
+- [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), originally an academic open-source project, is now an official [**reference implementation**](https://docs.vllm.ai/en/stable/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including K8S-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, etc.
 - Why does it matter to the industry? 
-  - A growing open community with official upstream vLLM support.
-  - Designed for both optimized performance and being Kubernetes-native.
+  - A growing, vibrant **OPEN community** [LINKS?] with official [**vLLM UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
+  - Designed for both **OPTIMIZED performance** [LINKS?] and **K8S-native** deployment.
 
 
 ## Why vLLM Production Stack?
 
-AGI isn't just about better models--it also needs better systems! Each organization that takes AGI seriously needs the best LLM serving infra, high availability, scalability, speed, and low cost.
+**AGI** isn't just about better models--it also needs better **systems that serve the models**! Every organization that takes AGI seriously needs the best LLM serving infra, with high availability, speed, and low cost.
 
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
-As more vLLM and LMCache users ask for help to deploy these projects in production, we see a pressing need for an official reference implementation of a cluster-wide vLLM serving system. Thus, we released the vLLM Production Stack project in early January 2025. At this point, it also supports native Kubernetes deployment, autoscaling, and LoRA management. 
+As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) early January 2025. 
 
 
 
-## Open community + Official vLLM support
+## Open Community + Official vLLM Support
 
-The project welcomes **EVERYONE** to contribute. It has a growing contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, ??, ??
-Check out our community meeting notes here: [ASK YUHAN FOR LINKS]
+The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, ??, ??
+Check out our community meeting notes here: [LINKS?]
 
-At the same time, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases. We achieve this by merging the LMCache Connector in the upstream main-branch vLLM. [LINK TO MERGE]
+Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the [**LMCache KV Connector**](https://github.com/vllm-project/vllm/pull/12953) in the upstream main-branch vLLM.
 
 In short, as our community grows, people never need to worry whether their contributions to the production stack might conflict with the vLLM releases.
 
 
 
-## K8S-native deployment + Optimized performance
+## K8S-native Deployment + Optimized Performance
 
-When deploying Kubernetes-native solutions, operators often face the difficult choice between "K8S-native" and "high performance." With vLLM Production Stack, you don't have to choose. 
+When deploying Kubernetes-native solutions, operators often have to choose either "K8S-native" or "optimized performance." With vLLM Production Stack, you can have BOTH K8S-native support AND OPTIMIZED performance. 
 
-It supports [CR-based router](link), [sidecar-based LoRA adapter management](link), [K8S-native autoscaling](link), and [distributed KV cache sharing](link) (direct point-to-point sharing or hierarchical structure). 
+With [**one-click installer**](LINK HERE!!), everyone can create a multi-vLLM-instance cluster in a K8S environment in 2 minutes. 
+
+It supports [CR-based router](link), [sidecar-based LoRA adapter management](link), [K8S-native autoscaling](link), and [distributed KV cache sharing](link) (i.e., direct point-to-point sharing or hierarchical structure). 
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
+## Cost Efficiency and Compute Optimization
+
+Deploying LLMs in production isn't just about technical capabilities—it's about making economic sense. vLLM Production Stack delivers significant cost advantages through several key optimizations:
+
+- **Efficient Resource Utilization**: Our distributed KV cache sharing (based on [**LMCache**](https://github.com/LMCache/LMCache)) and LLM-aware routing reduces memory redundancy and compute wastage across replicas, allowing you to serve more concurrent users with the same hardware.
+
+- **Intelligent Autoscaling**: The system scales resources up and down based on actual demand patterns, eliminating wasteful over-provisioning while maintaining performance.
+
+- **Real-world Cost Savings**: Early adopters report 30-40% cost reduction in real-world deployment compared to traditional serving solutions while maintaining or improving response times.
+
+These efficiency gains translate directly to your bottom line. Whether you're a startup watching every dollar or an enterprise managing large-scale deployments, vLLM Production Stack helps maximize the return on your AI investment.
 
 ## Concluding Words
 
