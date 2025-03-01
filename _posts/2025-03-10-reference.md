@@ -16,7 +16,7 @@ image: /assets/img/benchmark_e2e_brix.png
 
 - [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), originally an academic open-source project, is now an official [**reference implementation**](https://docs.vllm.ai/en/stable/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including K8S-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, etc.
 - Why does it matter to the industry? 
-  - A growing, vibrant **OPEN community** [LINKS?] with official [**vLLM UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
+  - A growing, vibrant [**OPEN community**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md) with official [**vLLM UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
   - Designed for both **OPTIMIZED performance** [LINKS?] and **K8S-native** deployment.
 
 
@@ -32,7 +32,7 @@ As more vLLM and LMCache users ask us for help with deploying our projects in th
 ## Open Community + Official vLLM Support
 
 The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, ??, ??
-Check out our community meeting notes here: [LINKS?]
+Check out our community meeting notes [**here**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md).
 
 Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the [**LMCache KV Connector**](https://github.com/vllm-project/vllm/pull/12953) in the upstream main-branch vLLM.
 
