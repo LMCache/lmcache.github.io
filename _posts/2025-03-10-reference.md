@@ -22,7 +22,7 @@ image:
 
 ## Why vLLM Production Stack?
 
-**AGI** isn't just about better models--it also needs better **systems that serve the models** so that every one would have access to the models! In order to fully harness the power of Generative AI, every organization that take this AI revolution seriously needs to have access to the best LLM serving infrastructure with high performance, availability, and with cost as low as possible.
+**AGI** isn't just about better models--it is also about better **systems to serve the models** to the wide public so that everyone will have access to the new capabilities! In order to fully harness the power of Generative AI, every organization that take this AI revolution seriously needs to have access to the best LLM serving infrastructure with high performance, availability, and with cost as low as possible.
 
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
 As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
