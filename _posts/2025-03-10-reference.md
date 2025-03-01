@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vLLM Production Stack: a Critical Step for Democratizing AGI"
+title: "vLLM Production Stack: a Critical Step to Democratize AGI"
 thumbnail-img: 
 share-img: 
 author: Production-Stack Team
