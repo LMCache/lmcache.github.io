@@ -28,8 +28,6 @@ vLLM Production Stack is borne out of a long-time **academic collaboration** bet
 As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
 
 
-## Open Community + Upstream vLLM Support
-
 ## Open Community + Official vLLM Support
 
 The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, HuggingFace, TensorChord and more.
