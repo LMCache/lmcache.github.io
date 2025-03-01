@@ -16,8 +16,8 @@ image: /assets/img/benchmark_e2e_brix.png
 
 - [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), originally an academic open-source project, is now an official [**reference implementation**](https://docs.vllm.ai/en/stable/deployment/k8s.html) of a cluster-wide full-stack vLLM serving system, including K8S-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, etc.
 - Why does it matter to the industry? 
-  - A growing, vibrant [**OPEN community**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md) with official [**vLLM UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
-  - Designed for both **OPTIMIZED performance** [LINKS?] and **K8S-native** deployment.
+  - A growing, vibrant [**OPEN community**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md) with official vLLM [**UPSTREAM support**](https://github.com/vllm-project/vllm/pull/12953).
+  - Designed for both **OPTIMIZED performance** [LINKS?] and **K8S-NATIVE** deployment.
 
 
 ## Why vLLM Production Stack?
@@ -46,7 +46,7 @@ When deploying Kubernetes-native solutions, operators often have to choose eithe
 
 With [**one-click installer**](LINK HERE!!), everyone can create a multi-vLLM-instance cluster in a K8S environment in 2 minutes. 
 
-It supports [CR-based router](link), [sidecar-based LoRA adapter management](link), [K8S-native autoscaling](link), and [distributed KV cache sharing](link) (i.e., direct point-to-point sharing or hierarchical structure). 
+It supports [CR-based router](LINK HERE), [sidecar-based LoRA adapter management](LINK HERE), [K8S-native autoscaling](LINK HERE), and [distributed KV cache sharing](LINK HERE) (i.e., direct point-to-point sharing or hierarchical structure). 
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
