@@ -33,7 +33,7 @@ As more vLLM and LMCache users ask us for help with deploying our projects in th
 The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, HuggingFace, TensorChord and more.
 Check out our community meeting notes [**here**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md).
 
-Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the [**LMCache KV Connector**] (vLLM PR [1](https://github.com/vllm-project/vllm/pull/12953),[2](https://github.com/vllm-project/vllm/pull/10502)) in the upstream main-branch vLLM.
+Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the **LMCache KV Connector** support in vLLM (PR [1](https://github.com/vllm-project/vllm/pull/12953),[2](https://github.com/vllm-project/vllm/pull/10502)) in the upstream main-branch vLLM.
 
 In short, as our community grows, people never need to worry whether their contributions to the production stack might conflict with the vLLM releases.
 
