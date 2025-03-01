@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vLLM Production Stack: a Critical Step to AGI"
+title: "vLLM Production Stack: a Critical Step for Democratizing AGI"
 thumbnail-img: 
 share-img: 
 author: Production-Stack Team
@@ -22,22 +22,20 @@ image:
 
 ## Why vLLM Production Stack?
 
-**AGI** isn't just about better models--it also needs better **systems that serve the models**! Every organization that takes AGI seriously needs the best LLM serving infra, with high availability, speed, and low cost.
+**AGI** isn't just about better models--it also needs better **systems that serve the models** so that every one would have access to the models! In order to fully harness the power of Generative AI, every organization that take this AI revolution seriously needs to have access to the best LLM serving infrastructure with high performance, availability, and with cost as low as possible.
 
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
-As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) early January 2025. 
-
+As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
 
 
 ## Open Community + Official vLLM Support
 
-The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, ??, ??
+The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, Tensorchord, ??
 Check out our community meeting notes [**here**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md).
 
 Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the [**LMCache KV Connector**](https://github.com/vllm-project/vllm/pull/12953) in the upstream main-branch vLLM.
 
 In short, as our community grows, people never need to worry whether their contributions to the production stack might conflict with the vLLM releases.
-
 
 
 ## K8S-Native Deployment + Optimized Performance
