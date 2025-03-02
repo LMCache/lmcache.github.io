@@ -27,7 +27,7 @@ image: /assets/img/reference-poster.png
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
 As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
 
-<!-- <img width="695" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" /> -->
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
 
 ## Open Community + Official vLLM Support
 
@@ -49,7 +49,7 @@ It supports features for Kubernetes operators (e.g. [CR-based router](LINK HERE)
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
-<!-- <img width="713" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" /> -->
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" />
 
 
 
