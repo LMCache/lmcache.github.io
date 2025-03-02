@@ -45,7 +45,8 @@ When deploying Kubernetes-native solutions, operators often have to choose eithe
 
 With [**one-click installer**](LINK HERE!!), everyone can create a multi-vLLM-instance cluster in a K8s environment in 2 minutes. 
 
-It supports features for Kubernetes operators (e.g. [CR-based router](LINK HERE), [sidecar-based LoRA adapter management](LINK HERE), [K8s-native autoscaling](LINK HERE), [distributed KV cache sharing](LINK HERE) via direct point-to-point sharing or hierarchical structure), while incorporating latest research from academia ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)).
+It supports features for Kubernetes operators (e.g. [CR-based router](https://github.com/vllm-project/production-stack/tree/main/src/router-controller), [LoRA adapter management](https://github.com/vllm-project/production-stack/blob/main/tutorials/09-lora-enabled-installation.md), [K8s-native autoscaling](https://github.com/vllm-project/production-stack/blob/main/tutorials/10-horizontal-autoscaling.md
+), [distributed KV cache sharing](https://github.com/vllm-project/production-stack/blob/main/tutorials/06-remote-shared-kv-cache.md) via direct point-to-point sharing or hierarchical structure), while incorporating latest research from academia ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)).
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
