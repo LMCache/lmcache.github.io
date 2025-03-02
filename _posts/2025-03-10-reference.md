@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vLLM Production Stack: a Critical Step for Democratizing AGI"
+title: "vLLM Production Stack: Powering the AGI Revolution with Scalable LLM Serving"
 thumbnail-img: /assets/img/reference-poster.png
 share-img: /assets/img/reference-poster.png
 author: Production-Stack Team
