@@ -3,10 +3,10 @@ layout: post
 title: "AGI Infra for All: vLLM Production Stack as the Standard for Scalable vLLM Serving"
 thumbnail-img: /assets/img/reference-poster.png
 share-img: /assets/img/reference-poster.png
-author: Production-Stack Team
+author: LMCache Lab
 image: /assets/img/reference-poster.png
 ---
-<be>
+<br>
 
 
 
