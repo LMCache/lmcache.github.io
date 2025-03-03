@@ -29,7 +29,7 @@ As more vLLM and LMCache users ask us for help with deploying our projects in th
 
 <p align="center">
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
-</p>p
+</p>
 
 ## Open Community + Official vLLM Support
 
