@@ -43,7 +43,7 @@ In short, as our community grows, people never need to worry whether their contr
 
 When deploying Kubernetes-native solutions, operators often have to choose either "K8s-native" or "optimized performance." With vLLM Production Stack, you can have BOTH K8s-native support AND OPTIMIZED performance. 
 
-With [**one-click installer**](LINK HERE!!), everyone can create a multi-vLLM-instance cluster in a K8s environment in 2 minutes. 
+With [**one-click installer**]([LINK HERE!!](https://github.com/vllm-project/production-stack/blob/main/utils/install-minikube-cluster.sh), everyone can create a multi-vLLM-instance cluster in a K8s environment in 2 minutes. 
 
 It supports features for Kubernetes operators (e.g. [CR-based router](https://github.com/vllm-project/production-stack/tree/main/src/router-controller), [LoRA adapter management](https://github.com/vllm-project/production-stack/blob/main/tutorials/09-lora-enabled-installation.md), [K8s-native autoscaling](https://github.com/vllm-project/production-stack/blob/main/tutorials/10-horizontal-autoscaling.md
 ), [distributed KV cache sharing](https://github.com/vllm-project/production-stack/blob/main/tutorials/06-remote-shared-kv-cache.md) via direct point-to-point sharing or hierarchical structure), while incorporating latest research from academia ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)).
