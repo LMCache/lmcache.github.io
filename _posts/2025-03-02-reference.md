@@ -22,12 +22,14 @@ image: /assets/img/reference-poster.png
 
 ## Why vLLM Production Stack?
 
-**AGI** isn't just about better models--it is also about better **systems to serve the models** to the wide public so that everyone will have access to the new capabilities! In order to fully harness the power of Generative AI, every organization that take this AI revolution seriously needs to have access to the best LLM serving infrastructure with high performance, availability, and with cost as low as possible.
+**AGI** isn't just about better models--it is also about better **systems to serve the models** to the wide public so that everyone will have access to the new capabilities! In order to fully harness the power of Generative AI, every organization that take this AI revolution seriously needs to have access to the best LLM-serving infrastructure with high performance, availability, and with cost as low as possible.
 
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
 As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
+<p align="center">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
+</p>p
 
 ## Open Community + Official vLLM Support
 
@@ -50,8 +52,9 @@ It supports features for Kubernetes operators (e.g. [CR-based router](https://gi
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" />
-
+<p align="center">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" />
+</p>
 
 
 ## Cost Efficiency and Compute Optimization
