@@ -27,11 +27,11 @@ image: /assets/img/reference-poster.png
 vLLM Production Stack is borne out of a long-time **academic collaboration** between the vLLM team (**UC Berkeley**) and the LMCache team (**UChicago**), an research-inspired KV-cache optimization system ([CacheGen](https://dl.acm.org/doi/10.1145/3651890.3672274), [CacheBlend](https://arxiv.org/abs/2405.16444)). 
 As more vLLM and LMCache users ask us for help with deploying our projects in their production settings, we see a pressing need for an **official reference implementation** of a cluster-wide vLLM serving system. Thus, we released [**vLLM Production Stack**](https://github.com/vllm-project/production-stack) in early January 2025. 
 
-<img width="695" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/1a4608cb-da03-4778-8316-eee0a89f8e13" />
 
 ## Open Community + Official vLLM Support
 
-The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, HuggingFace, TensorChord and more.
+The project welcomes **EVERYONE** to contribute. It has a growing and vibrant contributor community with over 30 active contributors from various companies worldwide, including IBM, Lambda, Redhat, HuggingFace, TensorChord, and more. The project's contributors are regularly invited to speak about it by [Alluxio](https://www.alluxio.io/videos/cloud-native-model-training-on-distributed-data), [Anyscale](https://www.anyscale.com/events/2025/01/23/ai-ml-infra-meetup-with-anyscale-and-alluxio-san-francisco), and various industry tech events.
 Check out our community meeting notes [**here**](https://github.com/vllm-project/production-stack/blob/main/community/community-event.md).
 
 Moreover, we ensure that the latest vLLM Production Stack is always compatible with the latest vLLM releases, thanks to the **LMCache KV Connector** support in vLLM (PR [1](https://github.com/vllm-project/vllm/pull/12953),[2](https://github.com/vllm-project/vllm/pull/10502)) in the upstream main-branch vLLM.
@@ -50,7 +50,7 @@ It supports features for Kubernetes operators (e.g. [CR-based router](https://gi
 
 In short, vLLM production stack showcases the promise when academic research and industry expertise join forces! 
 
-<img width="713" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" />
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/6fcc5955-aff8-4de4-93bb-b844124815b3" />
 
 
 
