@@ -85,9 +85,6 @@ We assumed a time period of 70 users participating in 20 rounds of conversations
 <img src="/assets/img/ITL_3.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
-*Why is AIBrix slow?* [REMEMBER TO ADD SOME WORDS HERE!]
-
-
 ## Better availability
 
 High availability is crucial in any production setting. For this reason, We compare the stability of AIBrix and vLLM Production Stack over a period of serving time in the following experiment.
