@@ -21,7 +21,7 @@ image: /assets/img/benchmark_e2e_brix.png
 - vLLM Production Stack offers:
   1. **Significantly better performance** over other systems in the vLLM ecosystem based on stress tests in real **production** environments.
   2. **Full-stack features**, including K8s-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, fault tolerance, etc.
-  Our next blogs will dive into other features. 
+  Our next blogs will dive into other features.  
  
 <!-- - Recently, **AIBrix**, released by **ByteDance**, boasts various necessary features built out for production settings. -->
 
