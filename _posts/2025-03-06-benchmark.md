@@ -85,7 +85,7 @@ We assumed a time period of 70 users participating in 20 rounds of conversations
 <img src="/assets/img/benchmark_e2e_6.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
-*Why AIBrix is slow?* [REMEMBER TO ADD SOME WORDS HERE!]
+*Why is AIBrix slow?* [REMEMBER TO ADD SOME WORDS HERE!]
 
 
 ## Better availability
