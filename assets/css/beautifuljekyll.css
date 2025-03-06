@@ -1123,3 +1123,28 @@ pre {
     display: inline-block;
   }
 }
+
+
+.giscus .giscus-reactions {
+  max-width: 400px;  /* Adjust width */
+  margin: 0 auto;     /* Center it */
+  padding: 4px 0;     /* Reduce padding */
+}
+
+/* Giscus container styles */
+.giscus {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+}
+
+/* Giscus iframe */
+.giscus-frame {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
