@@ -51,7 +51,7 @@ We made public both the benchmark [*scripts*](https://github.com/vllm-project/pr
 
 
 
-### Results
+## Faster and higher throughput
 First, we compare the average time-to-first-token (TTFT) delay as a function of queries per second (QPS) for these three solutions:
 
 **AIBrix** (red line) shows a steep increase in TTFT as QPS rises (i.e., higher loads). This could be attributed to inefficient (pytorch-based) implementation of KV cache offloading and possibly other bottlenecks in other system components.
@@ -68,9 +68,8 @@ First, we compare the average time-to-first-token (TTFT) delay as a function of 
 
 Regarding the inter-token-latency (ITL), we observe a similar pattern that while the ITL of both AIBrix and Naive K8s went up, production stack remains constantly low latency. 
 
-
-### More Experiments
-We will show more experiment results in this section. In the first set of experiments, we change the number of rounds that user have chat with into 40 rounds per session. Improvement of vLLM Production Stack grows even higher due to the increasing chance of KV cache reuse.
+<!-- We will show more experiment results in this section. -->
+In the next set of experiments, we change the number of rounds that user have chat with into 40 rounds per session. Improvement of vLLM Production Stack grows even higher due to the increasing chance of KV cache reuse.
 
  <div align="center">
 <img src="/assets/img/benchmark_e2e_3.png" alt="Icon" style="width: 47%; vertical-align:middle;">
@@ -85,6 +84,8 @@ We assumed a time period of 70 users participating in 20 rounds of conversations
 <img src="/assets/img/benchmark_e2e_5.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 <img src="/assets/img/benchmark_e2e_6.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
+
+*Why AIBrix is slow?* [REMEMBER TO ADD SOME WORDS HERE!]
 
 
 ## Better availability
