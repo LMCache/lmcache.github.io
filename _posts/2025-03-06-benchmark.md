@@ -25,7 +25,7 @@ image: /assets/img/benchmark_e2e_brix.png
  
 <!-- - Recently, **AIBrix**, released by **ByteDance**, boasts various necessary features built out for production settings. -->
 
-- Since real-world performance numbers are not public, today we released a **benchmark** everyone can test vLLM Production Stack. In particular, it shows that vLLM Production Stack performs **10X** faster and more cost-efficient, in prefill-heavy workloads, than the baseline vLLM deployment method as well as AIBrix, another full-stack system recently released by **ByteDance**. <!-- Moreover, we show that **AIBrix** perform even **worse** than a **naive vLLM** + K8s setup.-->
+- Since real-world performance numbers are not public (which will be a future blog!), today we released a **benchmark** everyone can test vLLM Production Stack. In particular, it shows that vLLM Production Stack performs **10X** faster and more cost-efficient, in prefill-heavy workloads, than the baseline vLLM deployment method as well as AIBrix, another full-stack system recently released by **ByteDance**. <!-- Moreover, we show that **AIBrix** perform even **worse** than a **naive vLLM** + K8s setup.-->
 We made public both the benchmark [*scripts*](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [*tutorial*](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md). 
 <!-- - In order to make it easy for everyone to reproduce the results and test with more benchmarks, we relase our [scripts](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [tutorial](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) to further facilitate the development of open-source LLM serving solutions.-->
 
@@ -109,7 +109,7 @@ While benchmarking doesn't show the full picture, we hope this blog shows that *
 
 Born out of an **academic collaboration** between **vLLM** (Berkeley) and **LMCache Lab** (UChicago), vLLM Production Stack features the most advanced built-in **KV-cache optimizations** and an upstream support of the latest vLLM releases.
 
-As an **OPEN** framework, vLLM Production Stack uses helm and python interface for ease of use and modification. As a near-term priority, **we welcome contributions from the community to add more K8S native support, including Envoy Endpoint, dynamic Lora Pool, among others**. 
+As an **OPEN** framework, vLLM Production Stack uses helm and Python interface for ease of use and modification. **We have received contributions from the community to add more K8S native support, including Envoy Endpoint, dynamic Lora Pool, among others**. 
 
 **We also welcome more benchmarks on different workloads and other serving frameworks**. Contact us in the **#production-stack** [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA) or LMCache [slack](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-2viziwhue-5Amprc9k5hcIdXT7XevTaQ) today to discuss the future steps!
 
