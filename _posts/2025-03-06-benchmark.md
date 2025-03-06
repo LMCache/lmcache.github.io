@@ -63,7 +63,7 @@ First, we compare the average time-to-first-token (TTFT) delay as a function of 
 
 <div align="center">
 <img src="/assets/img/TTFT_1.png" alt="Icon" style="width: 47%; vertical-align:middle;">
- <img src="/assets/img/ITL_1" alt="Icon" style="width: 47%; vertical-align:middle;">
+ <img src="/assets/img/ITL_1.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
 Regarding the inter-token-latency (ITL), we observe a similar pattern that while the ITL of both AIBrix and Naive K8s went up, production stack remains constantly low latency. 
