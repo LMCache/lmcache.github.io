@@ -11,7 +11,7 @@ image: /assets/img/benchmark_e2e_brix.png
 ## A picture is worth a thousand words: 
 
 <div align="center">
-<img src="/assets/img/benchmark_e2e_brix.png" alt="Icon" style="width: 60%; vertical-align:middle;">
+<img src="/assets/img/TTFT_1.png" alt="Icon" style="width: 60%; vertical-align:middle;">
 </div>
 
 ## Executive Summary:
@@ -62,8 +62,8 @@ First, we compare the average time-to-first-token (TTFT) delay as a function of 
 
 
 <div align="center">
-<img src="/assets/img/benchmark_e2e_brix.png" alt="Icon" style="width: 47%; vertical-align:middle;">
- <img src="/assets/img/benchmark_e2e_2.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+<img src="/assets/img/TTFT_1.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+ <img src="/assets/img/ITL_1" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
 Regarding the inter-token-latency (ITL), we observe a similar pattern that while the ITL of both AIBrix and Naive K8s went up, production stack remains constantly low latency. 
@@ -72,8 +72,8 @@ Regarding the inter-token-latency (ITL), we observe a similar pattern that while
 In the next set of experiments, we change the number of rounds that user have chat with into 40 rounds per session. Improvement of vLLM Production Stack grows even higher due to the increasing chance of KV cache reuse.
 
  <div align="center">
-<img src="/assets/img/benchmark_e2e_3.png" alt="Icon" style="width: 47%; vertical-align:middle;">
-<img src="/assets/img/benchmark_e2e_4.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+<img src="/assets/img/TTFT_2.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+<img src="/assets/img/ITL_2.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
 We also tested our performance on bigger models such as Llama-70B. In the following graphs.We emulated running a cluster with 4 nodes, each running Llama-3.1-70B-Instruct with tensor parallelism on 2 A100 GPUs with 80GB. The other specifications per pod stay the same.
@@ -81,8 +81,8 @@ We also tested our performance on bigger models such as Llama-70B. In the follow
 We assumed a time period of 70 users participating in 20 rounds of conversations with the LLM. Each requests consists of 9,000 input tokens per user and outputs 10 tokens.
 
 <div align="center">
-<img src="/assets/img/benchmark_e2e_5.png" alt="Icon" style="width: 47%; vertical-align:middle;">
-<img src="/assets/img/benchmark_e2e_6.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+<img src="/assets/img/TTFT_3.png" alt="Icon" style="width: 47%; vertical-align:middle;">
+<img src="/assets/img/ITL_3.png" alt="Icon" style="width: 47%; vertical-align:middle;">
 </div>
 
 *Why is AIBrix slow?* [REMEMBER TO ADD SOME WORDS HERE!]
