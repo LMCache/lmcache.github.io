@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Open-Source LLM Inference Cluster Performing 10x FASTER than SOTA OSS Solution"
-thumbnail-img: /assets/img/benchmark_e2e_brix.png
-share-img: /assets/img/benchmark_e2e_brix.png
+thumbnail-img: /assets/img/TTFT_1.png
+share-img: /assets/img/TTFT_1.png
 author: Production-Stack Team
-image: /assets/img/benchmark_e2e_brix.png
+image: /assets/img/TTFT_1.png
 ---
 <br>
 
