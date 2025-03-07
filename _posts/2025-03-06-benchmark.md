@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open-Source LLM Inference Cluster Performing 10x FASTER than this Big Tech Solution"
+title: "Open-Source LLM Inference Cluster Performing 10x FASTER than SOTA OSS Solution"
 thumbnail-img: /assets/img/benchmark_e2e_brix.png
 share-img: /assets/img/benchmark_e2e_brix.png
 author: Production-Stack Team
@@ -16,16 +16,16 @@ image: /assets/img/benchmark_e2e_brix.png
 
 ## Executive Summary:
 
-- [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), an official [**open-source reference implementation**](https://docs.vllm.ai/en/latest/deployment/k8s.html) of a cluster-wide, full-stack vLLM serving system, was first released in Jan 2025 by researchers from vLLM and UChicago. Since then, the system has gained popularity and attracted a growing open-source contributor community (check out our [previous blog](https://blog.lmcache.ai/2025-03-02-reference/)).
+- [**vLLM Production Stack**](https://github.com/vllm-project/production-stack), an [**open-source reference implementation**](https://docs.vllm.ai/en/latest/deployment/k8s.html) of a cluster-wide, full-stack vLLM serving system, was first released in Jan 2025 by researchers from vLLM and UChicago. Since then, the system has gained popularity and attracted a growing open-source contributor community (check out our [previous blog](https://blog.lmcache.ai/2025-03-02-reference/)).
 
 - vLLM Production Stack offers:
   1. **Significantly better performance** over other systems in the vLLM ecosystem based on stress tests in real **production** environments.
   2. **Full-stack features**, including K8s-native router, autoscaling, LoRA management, distributed KV sharing, monitoring, fault tolerance, etc.
   Our next blogs will dive into other features.  
  
-<!-- - Recently, **AIBrix**, released by **ByteDance**, boasts various necessary features built out for production settings. -->
+<!-- - Recently, **AIBrix** boasts various necessary features built out for production settings. -->
 
-- Since real-world performance numbers are not public (which will be a future blog!), today we released a **benchmark** everyone can test vLLM Production Stack. In particular, it shows that vLLM Production Stack performs **10X** faster and more cost-efficient, in prefill-heavy workloads, than the baseline vLLM deployment method as well as AIBrix, another full-stack system recently released by **ByteDance**. <!-- Moreover, we show that **AIBrix** perform even **worse** than a **naive vLLM** + K8s setup.-->
+- Since real-world performance numbers are not public (which will be a future blog!), today we released a **benchmark** everyone can test vLLM Production Stack. In particular, it shows that vLLM Production Stack performs **10X** faster and more cost-efficient, in prefill-heavy workloads, than the baseline vLLM deployment method as well as AIBrix, another full-stack system recently released in the open-source community. <!-- Moreover, we show that **AIBrix** perform even **worse** than a **naive vLLM** + K8s setup.-->
 We made public both the benchmark [*scripts*](https://github.com/vllm-project/production-stack/tree/main/benchmarks/multi-round-qa) and [*tutorial*](https://github.com/vllm-project/production-stack/blob/main/tutorials/08-benchmark-multi-round-qa-multi-gpu.md). 
 <!-- - In order to make it easy for everyone to reproduce the results and test with more benchmarks, we relase our [scripts](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) and [tutorial](https://github.com/vllm-project/production-stack/blob/main/tutorials/07-benchmark-multi-round-qa-multi-gpu.md) to further facilitate the development of open-source LLM serving solutions.-->
 
