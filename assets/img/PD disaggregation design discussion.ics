@@ -1,0 +1,92 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Central Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN=pitsodark@gmail.com;RSVP=TRUE:mailto:pitsodark@gmail.com
+CLASS:PUBLIC
+CREATED:20250306T054843Z
+DESCRIPTION:Zoom link: https://uchicago.zoom.us/j/4015085138?pwd=eU5ZNzc3Mm
+	g3bTFiQ2E3ejZqSXlWQT09 <https://www.google.com/url?q=https://uchicago.zoom
+	.us/j/4015085138?pwd%3DeU5ZNzc3Mmg3bTFiQ2E3ejZqSXlWQT09&sa=D&source=calend
+	ar&ust=1741671938110444&usg=AOvVaw3_175Hk-Kxw9cjy501t7Kv>  Google doc: htt
+	ps://docs.google.com/document/d/1uPGdbEXksKXeN4Q9nUm9hzotqEjQhYmnpAhidLuAs
+	jk/edit?usp=sharing <https://www.google.com/url?q=https://docs.google.com/
+	document/d/1uPGdbEXksKXeN4Q9nUm9hzotqEjQhYmnpAhidLuAsjk/edit?usp%3Dsharing
+	&sa=D&source=calendar&ust=1741671938110444&usg=AOvVaw3THqU9QUW3DKAEYbuQtZv
+	O> \n\n
+DTEND;TZID="Central Standard Time":20250310T200000
+DTSTAMP:20250306T054829Z
+DTSTART;TZID="Central Standard Time":20250310T193000
+LAST-MODIFIED:20250306T054843Z
+LOCATION:https://uchicago.zoom.us/j/4015085138?pwd=eU5ZNzc3Mmg3bTFiQ2E3ejZq
+	SXlWQT09
+ORGANIZER;CN="Kuntai Du":mailto:kuntai@uchicago.edu
+PRIORITY:5
+RRULE:FREQ=WEEKLY;COUNT=9;BYDAY=MO
+SEQUENCE:0
+SUMMARY;LANGUAGE=zh-cn:PD disaggregation design discussion
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000608837EC288EDB01000000000000000
+	010000000C0723EA4BAB0C64B868C118F888849D1
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml" 
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-mic
+	rosoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/
+	12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta name=Generato
+	r content="Microsoft Word 15 (filtered medium)"><style><!--\n/* Font Defin
+	itions */\n@font-face\n	{font-family:"Cambria Math"\;\n	panose-1:2 4 5 3 5
+	 4 6 3 2 4\;}\n@font-face\n	{font-family:DengXian\;\n	panose-1:2 1 6 0 3 1
+	 1 1 1 1\;}\n@font-face\n	{font-family:Aptos\;}\n@font-face\n	{font-family
+	:DengXian\;\n	panose-1:2 1 6 0 3 1 1 1 1 1\;}\n/* Style Definitions */\np.
+	MsoNormal\, li.MsoNormal\, div.MsoNormal\n	{margin:0cm\;\n	font-size:12.0p
+	t\;\n	font-family:"Aptos"\,sans-serif\;\n	mso-ligatures:standardcontextual
+	\;}\na:link\, span.MsoHyperlink\n	{mso-style-priority:99\;\n	color:#467886
+	\;\n	text-decoration:underline\;}\nspan.EmailStyle17\n	{mso-style-type:per
+	sonal-compose\;\n	font-family:"Aptos"\,sans-serif\;\n	color:windowtext\;}\
+	n.MsoChpDefault\n	{mso-style-type:export-only\;}\n@page WordSection1\n	{si
+	ze:612.0pt 792.0pt\;\n	margin:72.0pt 90.0pt 72.0pt 90.0pt\;}\ndiv.WordSect
+	ion1\n	{page:WordSection1\;}\n--></style><!--[if gte mso 9]><xml>\n<o:shap
+	edefaults v:ext="edit" spidmax="1026" />\n</xml><![endif]--><!--[if gte ms
+	o 9]><xml>\n<o:shapelayout v:ext="edit">\n<o:idmap v:ext="edit" data="1" /
+	>\n</o:shapelayout></xml><![endif]--></head><body lang=EN-US link="#467886
+	" vlink="#96607D" style='word-wrap:break-word'><div class=WordSection1><p 
+	class=MsoNormal><span style='font-size:11.0pt'>Zoom link:&nbsp\;<a href="h
+	ttps://www.google.com/url?q=https://uchicago.zoom.us/j/4015085138?pwd%3DeU
+	5ZNzc3Mmg3bTFiQ2E3ejZqSXlWQT09&amp\;sa=D&amp\;source=calendar&amp\;ust=174
+	1671938110444&amp\;usg=AOvVaw3_175Hk-Kxw9cjy501t7Kv" target="_blank">https
+	://uchicago.zoom.us/j/4015085138?pwd=eU5ZNzc3Mmg3bTFiQ2E3ejZqSXlWQT09</a>&
+	nbsp\;Google doc:&nbsp\;<a href="https://www.google.com/url?q=https://docs
+	.google.com/document/d/1uPGdbEXksKXeN4Q9nUm9hzotqEjQhYmnpAhidLuAsjk/edit?u
+	sp%3Dsharing&amp\;sa=D&amp\;source=calendar&amp\;ust=1741671938110444&amp\
+	;usg=AOvVaw3THqU9QUW3DKAEYbuQtZvO" target="_blank">https://docs.google.com
+	/document/d/1uPGdbEXksKXeN4Q9nUm9hzotqEjQhYmnpAhidLuAsjk/edit?usp=sharing<
+	/a><o:p></o:p></span></p></div></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-APPTSEQTIME:20250306T054829Z
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
