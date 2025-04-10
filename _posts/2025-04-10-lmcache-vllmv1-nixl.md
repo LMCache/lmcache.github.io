@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Next-Gen KV Cache Layer: LMCache x vLLM V1 x NIXL"
+title: "Shaping NIXL-based PD Disaggregation in vLLM V1"
 thumbnail-img: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264d809ed
 share-img: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264d809ed
 author: LMCache Team
@@ -9,9 +9,9 @@ image: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264
 <br>
 
 ### Highlights:
-Today, LMCache announces two groundbreaking advancements in LLM system infrastructure:
+Today, LMCache shares two key designs in LLM infrastructure for disaggregated prefill and more:
 - **LMCache x vLLM V1**: The **first** KV cache layer integration with **vLLM V1**. [**Link to PR**](https://github.com/vllm-project/vllm/pull/15960/)
-- **LMCache x NIXL**: Full **support for NVIDIA's NIXL** enabling ultra-fast KV cache transfers across GPUs and nodes. [**Link to PR**](https://github.com/LMCache/LMCache/pull/446)
+- **LMCache x NIXL**: **Support for NVIDIA's NIXL** enabling ultra-fast KV cache transfers across GPUs and nodes. [**Link to PR**](https://github.com/LMCache/LMCache/pull/446)
 
 Together, these updates mark a pivotal leap forward in inference performance, system flexibility, and multi-node scale-out capabilities.
 
