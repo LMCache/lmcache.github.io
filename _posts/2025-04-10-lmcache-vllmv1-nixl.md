@@ -1,11 +1,12 @@
+---
 layout: post
 title: "The Next-Gen KV Cache Layer: LMCache x vLLM V1 x NIXL"
-thumbnail-img: 
-share-img: 
+thumbnail-img: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264d809ed
+share-img: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264d809ed
 author: LMCache Team
-image: 
+image: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264d809ed
 ---
-<be>
+<br>
 
 ### Executive Summary:
 Today, LMCache announces two groundbreaking advancements in LLM system infrastructure:
@@ -35,9 +36,10 @@ This paves the way for a new KV cache layer, and it's critical for workloads tha
 
 ## LMCache’s Two Core KV Cache Functions: Storage and Transport
 
-LMCache now supports two major modes of operation:
+LMCache now supports two major modes of operation (as depicted in the following diagram):
 
-<img width="732" alt="image" src="https://github.com/user-attachments/assets/34f37ca4-b337-418f-9b8d-8a5bb2e81ef1" />
+<img width="732" alt="image" src="https://github.com/user-attachments/assets/5c8d1086-b4c7-44b9-bab7-bcd4c5776b69" />
+
 
 
 ### 1. **Storage: DB-Style Loading and Offloading**
@@ -69,8 +71,7 @@ This unlocks new LLM serving paradigms: real-time distributed KV cache retrieval
 
 ---
 
-## Coming next
+## Stay Tuned for More Performance Benchmarking
 
 Not mentioned in this blog are performance optimizations we implemented in this effort. We will release benchmark numbers in the coming blogs!
 
-*Stay tuned!*
