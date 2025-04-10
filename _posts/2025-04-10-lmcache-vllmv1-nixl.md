@@ -8,7 +8,7 @@ image: https://github.com/user-attachments/assets/d969ca83-cb3b-4a90-8859-880264
 ---
 <br>
 
-### Executive Summary:
+### Highlights:
 Today, LMCache announces two groundbreaking advancements in LLM system infrastructure:
 - **LMCache x vLLM V1**: The **first** KV cache layer integration with **vLLM V1**. [**Link to PR**](https://github.com/vllm-project/vllm/pull/15960/)
 - **LMCache x NIXL**: Full **support for NVIDIA's NIXL** enabling ultra-fast KV cache transfers across GPUs and nodes. [**Link to PR**](https://github.com/LMCache/LMCache/pull/446)
