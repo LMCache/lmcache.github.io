@@ -63,7 +63,7 @@ Moreover, LMCache’s connector is now officially integrated into upstream vLLM,
 
 The second mode targets **disaggregated prefill** scenarios, where KV cache needs to be fetched from remote nodes in real-time. Instead of recomputing context tokens locally, LMCache enables **peer-to-peer KV transfers**, cutting down on redundant compute and unlocking cross-node cache reuse. This feature is crucial for multi-GPU, multi-node serving environments that demand extreme efficiency.
 
-To push KV cache transport even further, LMCache now includes **first-class support for NIXL**, NVIDIA’s new communication abstraction designed for heterogeneous hardware. NIXL supports **NVLink**, **RDMA-capable NICs**, and **GPU Direct Storage**, offering unmatched bandwidth and latency across devices.
+To push KV cache transport even further, LMCache now includes **first-class support for NIXL** from NVIDIA Dynamo (https://github.com/ai-dynamo/nixl), the new communication abstraction designed for heterogeneous hardware. NIXL supports **NVLink**, **RDMA-capable NICs**, and **GPU Direct Storage**, offering unmatched bandwidth and latency across devices.
 
 LMCache’s modular transport layer plugs directly into NIXL’s communication stack, allowing it to dynamically select the fastest available data path between GPUs, CPUs, and storage. Whether it’s a local multi-GPU system or a datacenter-scale cluster, LMCache with NIXL delivers blazing fast KV cache movement, often faster than recomputing even a single token’s attention.
 
