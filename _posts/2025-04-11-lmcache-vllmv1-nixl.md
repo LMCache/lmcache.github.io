@@ -73,5 +73,10 @@ This unlocks new LLM serving paradigms: real-time distributed KV cache retrieval
 
 ## Stay Tuned for More Performance Benchmarking
 
-Not mentioned in this blog are performance optimizations we implemented in this effort. We will release benchmark numbers in the coming blogs!
+In this blog, we only discussed the design of the newest integration. We will share the performance optimizations implemented along with this effort and release benchmarking numbers in the coming blogs. Follow us on LinkedIn and Twitter(X) to learn more next week!
 
+## Links
+- **LMCache Github: [https://github.com/LMCache/LMCache](https://github.com/LMCache/LMCache)**
+- **Chat with the Developers** **[Interest Form](https://forms.gle/mQfQDUXbKfp2St1z7)**
+- **LMCache [slack](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-2viziwhue-5Amprc9k5hcIdXT7XevTaQ)**
+- **vLLM Production-Stack [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA)**
