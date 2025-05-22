@@ -1,0 +1,15 @@
+LMCache Announces Exciting Collaboration with Red Hat, with LMCache Serving as a Founding Supporter of the llm-d project.
+
+We’re delighted to announce that LMCache is joining forces with Red Hat and other industry leaders on some exciting open source project collaborations. LMCache has been selected to be a core component of llm-d, a new open source project led by Red Hat to drive more scalable, efficient distributed inferencing across clusters of vLLM servers with intelligent, inference-aware routing. The llm-d project was just announced at Red Hat Summit 2025 <LINK TO THE ANNOUNCEMENT>, and it already has a strong ecosystem of founding contributors and partners that see huge potential in llm-d.
+
+As part of this collaboration, Red Hat will also dedicate resources to improve LMCache and both have formally joined the LMCache project! As a long-time leader in open source - from Linux and Apache to Kubernetes and its current work in AI - Red Hat brings deep technical expertise in growing open ecosystems and enhancing enterprise readiness. 
+
+"The future of inference is built on open source, with the key performance improvements delivered by projects like LMCache providing a solid foundation for highly-scalable inference breakthroughs," said Brian Stevens, SVP and AI CTO at Red Hat. "We are excited about our collaborations with the LMCache community."
+
+Red Hat and LMCache share a common appreciation for open source collaboration and culture. This collaboration is already underway with Red Hat making contributions to LMCache to improve the project’s CI/CD infrastructure, standardize its interfaces, and adding documentation that improves the its consumability and governance. 
+
+The LMCache open source project is emerging as a popular and essential companion to inference servers like vLLM. It saves valuable GPU cycles and reduces response latency by caching reusable KV data across GPU, CPU DRAM, and local disk. Our research shows that LMCache can dramatically reduce LLM response time and improve GPU efficiency across a wide range of real-world workloads.
+
+“LMCache, a project within the vLLM ecosystem, demonstrates how academic research can drive real-world impact through open-sourcing advanced system design and algorithms,” said Ion Stoica, Professor at UC Berkeley and Principal Investigator of vLLM. “Its implementation provides a clear roadmap for bridging the gap between state-of-the-art ML systems research and enterprise-grade LLM deployment.”
+
+In summary, the LMCache project is very excited about this collaboration with Red Hat to make LMCache a founding supporter of llm-d. We are also excited to have Red Hat join the LMCache project to accelerate innovation, expand capabilities, and scale adoption. Together with the broader open source community, we’re building the fast, open future of LLM infrastructure. We welcome all developers, researchers, and contributors to join us as well: https://github.com/LMCache/LMCache
