@@ -23,7 +23,7 @@ LMCache’s high-performance design yields a cache hit rate up to 40–50% in Bl
 
 Deploying LMCache was seamless. Bloomberg integrated it into their infrastructure by switching the Docker image of the vLLM serving engine, a widely used open-source LLM inference engine.
 
-> “LMCache has been a game-changer for us,” said Vadim Markovtsev, an engineering manager at Bloomberg. “It allowed us to cut inference costs meaningfully without compromising latency or reliability. The fact that it's open-source and so easy to integrate made it an obvious choice.”
+> “LMCache has been a game-changer for us,” said Vadim Dabravolski, an engineering manager at Bloomberg. “It allowed us to cut inference costs meaningfully without compromising latency or reliability. The fact that it's open-source and so easy to integrate made it an obvious choice.”
 
 Beyond raw performance, LMCache includes enterprise-ready features that Bloomberg relies on, such as KV cache pinning (to persist key-value pairs across sessions) and detailed cache hit/miss metrics for internal observability.
 
