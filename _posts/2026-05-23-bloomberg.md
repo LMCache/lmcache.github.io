@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bloomberg Cuts LLM Inference Cost Using LMCache, Open-Source KV Cache Layer for vLLM"
+title: "Bloomberg Cuts LLM Inference Cost Using LMCache, Open-Source KV Cache Layer"
 thumbnail-img: https://github.com/user-attachments/assets/2ea85a52-f0fe-44fd-80c7-e04896911e60
 share-img:  https://github.com/user-attachments/assets/2ea85a52-f0fe-44fd-80c7-e04896911e60
 author: LMCache Team
