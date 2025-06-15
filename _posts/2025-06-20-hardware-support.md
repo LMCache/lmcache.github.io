@@ -66,8 +66,5 @@ The broader vision behind the *LLM Production Stack* is to provide a **modular**
 
 With LMCache now going cross-hardware, that vision is closer than ever.
 
-**→ Want to get involved or test out your hardware integration? [Join us on GitHub](https://github.com/open-compass/lmcache) or drop into our community Slack.**
+**→ Want to get involved or test out your hardware integration? [Join us on GitHub](https://github.com/vllm-project/production-stack) or drop into our [community Slack](https://vllm-dev.slack.com/archives/C089SMEAKRA).**
 
----
-
-Let me know if you’d like help drafting the tweet/thread or LinkedIn blurb to go with this.
