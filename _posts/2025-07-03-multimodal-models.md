@@ -7,7 +7,7 @@ author: LMCache Team
 image:  /assets/img/mm.png
 ---
 
-**Take-away:** The latest LMCache release plugs seamlessly into vLLM's new multimodal stack. By hashing image-side tokens (`mm_hashes`) and caching their key-value (KV) pairs, LMCache reuses vision embeddings across requests—slashing *time-to-first-token* and GPU memory for image-LLMs.
+**TL;DR:** The latest LMCache release plugs seamlessly into vLLM's new multimodal stack. By hashing image-side tokens (`mm_hashes`) and caching their key-value (KV) pairs, LMCache reuses vision embeddings across requests—slashing *time-to-first-token* and GPU memory for visual-LLMs.
 
 <div align="center">
 <img src="/assets/img/mm.png" alt="LMCache Multimodal Architecture" style="width: 87%; vertical-align:middle;">
@@ -17,8 +17,9 @@ image:  /assets/img/mm.png
 ## Summary — Why This Matters
 
 Multimodal large language models (MLLMs) multiply KV-cache traffic: every image can add thousands of "vision tokens." Without reuse, identical pictures force the GPU to re-encode vision features for each query.
-LMCache 0.3.1 [PR \#882](https://github.com/LMCache/lmcache/pull/882) adds a hash-based lookup so repeated images hit the cache instead of the GPU pipeline. In a demo with Qwen-VL-2B:
+LMCache 0.3.1 [PR \#882](https://github.com/LMCache/lmcache/pull/882) adds a hash-based lookup so repeated images hit the cache instead of the GPU pipeline. 
 
+In an example run with Qwen-VL-2B:
 
 | Query | Total tokens | KV hits | Hit rate |
 | :-- | :-- | :-- | :-- |
@@ -28,25 +29,24 @@ LMCache 0.3.1 [PR \#882](https://github.com/LMCache/lmcache/pull/882) adds a has
 
 The second request streamed in ~1 s vs. ~18 s cold-start, showing near-instant reuse.
 
-
 ## 1 | Introduction — How vLLM Handles Multimodality
 
-vLLM V1 exposes a `multi_modal_data` field; vision inputs are tokenised by a **vision encoder → projector** and spliced into the text sequence as *placeholder ranges*.
+In vLLM V1, the input contains a `multi_modal_data` field besides the prompt data. In the prompt of the input, vision inputs are tokenised by a **vision encoder → projector** and spliced into the text sequence as *placeholder ranges*.
 For each image it also emits a **16-byte hex digest (`mm_hash`)** that uniquely identifies the visual content.
 
-## 2 | The Bottleneck Before LMCache
+## 2 | The Bottleneck Before the Update
 
-1. **Linear KV growth.** Every pixel-token sits in GPU memory for the whole session—dominating long chats.
-2. **Bandwidth bound.** Attention kernels stall on DRAM when moving these extra KV blocks.
-3. **No cross-request reuse.** Identical images in consecutive requests pay the full vision-encoder cost again.
+Since the prompts contain placeholder tokens for inputted images, given the same prompt but two different images, the prompt prefix matching algorithm will still reuse the KV cache of the images and prompt despite that the images do not match. This error can cause weird behavior when users uploaded different images but the text prompts following are similar. This can potentially cause **privacy** issues if enabled since other users will be able to access the KV cache of the images other people uploaded.   
+
+Thus, the multimodal functionality were not compatible with the advanced offloading capabilities that LMCache provide.
 
 ## 3 | How LMCache Enables Multimodal Caching
 
-The merged patch adds three key pieces:
+In this most recent update, LMCache team member, Shaoting Feng, fixed problem by adding these three key components below:
 
-- `apply_mm_hashes_to_token_ids()` overwrites dummy vision-token IDs with a 16-bit hash (cheap Torch slice).
-- `RequestTracker` now stores `mm_hashes` + positions, so every KV lookup/insert sees the true hash.
-- On cache store/retrieve, LMCache treats those hashed IDs like normal tokens—no special path needed.
+- `apply_mm_hashes_to_token_ids()` overwrites dummy vision-token IDs with a 16-bit hash (cheap Torch slice) so that the placeholders tokens used in computation are replaced with real token during cache management phase.
+- `RequestTracker` now stores `mm_hashes` + positions, so every KV lookup/insert sees the complete true hash behind the image + prompt pair.
+- On cache store/retrieve, LMCache will use those hashed IDs with the original logic without the need to add special path.
 
 As a result, **identical images map to identical token sequences**, and KV reuse "just works" in both storage and P2P transport modes.
 
@@ -88,5 +88,5 @@ We're actively seeking partnerships with LLM inference frameworks and cloud prov
 
 Let's make AI infrastructure faster, cheaper, and smarter—together.
 
-Try LMCache: https://github.com/LMCache/LMCache
-Follow us on [Linkedin](https://www.linkedin.com/company/lmcache-lab/?viewAsMember=true), [Twitter](https://x.com/lmcache) 
+Try [LMCache](https://github.com/LMCache/LMCache) today
+Follow us on [Linkedin](https://www.linkedin.com/company/lmcache-lab/?viewAsMember=true) and [Twitter](https://x.com/lmcache) 
