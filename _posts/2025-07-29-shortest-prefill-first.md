@@ -46,3 +46,9 @@ Ready for these speedups out-of-the-box? **LMIgnite** is your one-click solution
 **Sign up** [here](https://lmignite.tensormesh.ai/) for early access.
 
 Faster prefill, faster decode, more efficient infra—the LMCache Lab way! 🚀
+
+## Contacts
+- **LMCache Github: [https://github.com/LMCache/LMCache](https://github.com/LMCache/LMCache)**
+- **Chat with the Developers** **[Interest Form](https://forms.gle/mQfQDUXbKfp2St1z7)**
+- **LMCache [slack](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-2viziwhue-5Amprc9k5hcIdXT7XevTaQ)**
+- **vLLM Production-Stack [channel](https://vllm-dev.slack.com/archives/C089SMEAKRA)**
