@@ -56,8 +56,8 @@ vLLM requires nightly built PyTorch to serve GPT models. To ensure compatibility
 Install LMCache from source (this command may take a few minutes due to CUDA kernel compilations):
 
 ```bash
-git clone https://github.com/LMCache/lmcache.github.io.git
-cd lmcache
+git clone https://github.com/LMCache/LMCache.git
+cd LMCache
 
 # In your virtual environment
 ENABLE_CXX11_ABI=1 uv pip install -e . --no-build-isolation
