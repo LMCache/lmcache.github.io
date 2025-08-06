@@ -56,6 +56,9 @@ vLLM requires nightly built PyTorch to serve GPT models. To ensure compatibility
 Install LMCache from source (this command may take a few minutes due to CUDA kernel compilations):
 
 ```bash
+git clone https://github.com/LMCache/lmcache.github.io.git
+cd lmcache
+
 # In your virtual environment
 ENABLE_CXX11_ABI=1 uv pip install -e . --no-build-isolation
 ```
@@ -84,7 +87,6 @@ max_local_cpu_size: 80
 ```bash
 LMCACHE_CONFIG_FILE="./backend_cpu.yaml" \
 LMCACHE_USE_EXPERIMENTAL=True \
-CUDA_VISIBLE_DEVICES=6,7 \
 vllm serve \
     openai/gpt-oss-120b \
     --max-model-len 32768 \
