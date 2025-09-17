@@ -5,8 +5,6 @@ comments: true
 author: NVIDIA Dynamo team, LMCache team
 ---
 
-# **NVIDIA Dynamo integrates  LMCache Accelerating LLM Inference**
-
 We’re thrilled to announce that [**Nvidia Dynamo**](https://github.com/ai-dynamo/dynamo) **has integrated [LMCache](https://github.com/LMCache/LMCache) as a [KV caching layer solution](https://docs.nvidia.com/dynamo/latest/components/backends/vllm/LMCache_Integration.html)**. This is a big milestone: Dynamo gets a battle-tested caching solution, and LMCache becomes part of a data center-scale inference platform used by many developers worldwide to deploy AI at scale.
 
 ## **Why KV Caching Matters**
