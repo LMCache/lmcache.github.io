@@ -4,6 +4,7 @@ title: "NVIDIA Dynamo integrates LMCache, Accelerating LLM Inference"
 comments: true
 thumbnail-img: "https://github.com/user-attachments/assets/84aa0337-6292-4f2c-aa3a-de12a0b61c22"
 share-img: "https://github.com/user-attachments/assets/84aa0337-6292-4f2c-aa3a-de12a0b61c22"
+image: "https://github.com/user-attachments/assets/84aa0337-6292-4f2c-aa3a-de12a0b61c22"
 author: NVIDIA Dynamo team, LMCache team
 ---
 
