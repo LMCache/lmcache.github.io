@@ -5,7 +5,9 @@ comments: true
 author: NVIDIA Dynamo team, LMCache team
 ---
 
-We’re thrilled to announce that [**Nvidia Dynamo**](https://github.com/ai-dynamo/dynamo) **has integrated [LMCache](https://github.com/LMCache/LMCache) as a [KV caching layer solution](https://docs.nvidia.com/dynamo/latest/components/backends/vllm/LMCache_Integration.html)**. This is a big milestone: Dynamo gets a battle-tested caching solution, and LMCache becomes part of a data center-scale inference platform used by many developers worldwide to deploy AI at scale.
+We're thrilled to announce that [**Nvidia Dynamo**](https://github.com/ai-dynamo/dynamo) **has integrated [LMCache](https://github.com/LMCache/LMCache) as a [KV caching layer solution](https://docs.nvidia.com/dynamo/latest/components/backends/vllm/LMCache_Integration.html)**. This is a big milestone: Dynamo gets a battle-tested caching solution, and LMCache becomes part of a data center-scale inference platform used by many developers worldwide to deploy AI at scale.
+
+For comprehensive details about Dynamo's KV cache optimization capabilities, see the **[NVIDIA Developer Blog post on reducing KV cache bottlenecks](https://developer.nvidia.com/blog/how-to-reduce-kv-cache-bottlenecks-with-nvidia-dynamo/)**.
 
 ## **Why KV Caching Matters**
 
@@ -41,6 +43,8 @@ This unlocks more advanced workflows:
 ### **Technical Reference**
 
 For a deeper dive into the motivation, design scope, and integration details, see the official [Nvidia Dynamo documentation on LMCache integration](https://docs.nvidia.com/dynamo/latest/components/backends/vllm/LMCache_Integration.html?utm_source=chatgpt.com).
+
+For more technical details about how Dynamo reduces KV cache bottlenecks and the broader context of this integration, check out the **[NVIDIA Developer Blog post on KV Cache optimization with Dynamo](https://developer.nvidia.com/blog/how-to-reduce-kv-cache-bottlenecks-with-nvidia-dynamo/)**.
 
 ## **Looking Ahead**
 
