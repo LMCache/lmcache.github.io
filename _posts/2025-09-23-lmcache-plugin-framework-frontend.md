@@ -4,7 +4,6 @@ title: "Implementing LMCache Plugin Framework & lmcache_frontend: Design Philoso
 subtitle: "A flexible plugin system for enhanced observability and management"
 date: 2025-09-23
 author: "Baolong, Kobe"
-cover-img: /assets/img/lmcache-plugin-framework-architecture.png
 thumbnail-img: /assets/img/lmcache-plugin-framework-architecture.png
 share-img: /assets/img/lmcache-plugin-framework-architecture.png
 tags: [LMCache, Plugin Framework, Frontend, vLLM, Monitoring]
