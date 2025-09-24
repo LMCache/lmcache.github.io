@@ -198,4 +198,4 @@ We hope that as LMCache becomes increasingly powerful, it can continue to mainta
 ## Reference Links
 
 - [lmcache_frontend GitHub Repository](https://github.com/LMCache/lmcache_frontend)
-- [LMCache Plugin Framework Documentation](https://docs.lmcache.ai)
+- [LMCache Plugin Framework Documentation](https://docs.lmcache.ai/developer_guide/plugin_framework.html)
