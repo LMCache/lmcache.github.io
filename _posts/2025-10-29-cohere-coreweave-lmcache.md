@@ -7,10 +7,6 @@ author: Walter Beller-Morales (Cohere), Samuel Shen (Tensormesh), Kishor Aher (C
 image: /assets/img/async.png
 ---
 
-# **Breaking the Memory Barrier: How LMCache and CoreWeave Power Efficient LLM Inference for Cohere**
-
-By Walter Beller-Morales (Cohere), Samuel Shen (Tensormesh), Kishor Aher (CoreWeave)
-
 ### **The challenge: Scaling enterprise AI**
 
 Enterprises today are racing to integrate large language models (LLMs) into their products and workflows, but doing it at scale brings challenges in performance, cost, and accuracy. Organizations need models to be based on their specific data, while making sure that this information remains private. [**Cohere**](https://cohere.com), one of the leading enterprise AI companies, built its North platform to help organizations use their own internal data safely and effectively to power retrieval-augmented generation (RAG). North allows enterprises to ground model outputs in trusted, private knowledge bases, delivering accurate, contextual responses tailored to their business.
